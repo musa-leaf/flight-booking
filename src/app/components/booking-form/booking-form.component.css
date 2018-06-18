@@ -1,0 +1,48 @@
+*{
+    outline: none;
+}
+input[type = "text"]{
+    width: 270px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-size: 1.5em;
+}
+
+select{
+    width: 295px;
+    padding: 10px;
+}
+
+table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input[type = "date"]{
+    padding: 7px 0;
+}
+table tr td{
+    
+    width: 150px;
+}
+input[type = "button"]{
+    width: 298px;
+    height: 37px;
+    background: transparent;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+form{
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-top: 15vh;
+    transform: translate(-50%);
+}

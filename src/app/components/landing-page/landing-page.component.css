@@ -1,0 +1,27 @@
+#hero{
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#hero h1{
+    font-size: 3em;
+    text-align: center;
+}
+#hero h3{
+    margin-top: 30px;
+    max-width: 680px;
+    text-align: center;
+    
+}
+
+#hero input {
+    background: transparent;
+    padding: 20px 60px;
+    margin-top: 80px;
+    border: 2px solid;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}

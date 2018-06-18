@@ -1,0 +1,10 @@
+body{
+    background: url(https://pixabay.com/get/e836b60c29f2063ed1584d05fb0938c9bd22ffd41cb3184297f1c578af/hot-air-ballons-1373167_1280.jpg) no-repeat 50% 50%;
+    background-size: cover;
+   
+}
+
+#wrap{
+    background: linear-gradient(rgba(216,67,74,.65) 1%, rgba(255,87,34,1) 100%);
+    min-height: 100vh;
+}
