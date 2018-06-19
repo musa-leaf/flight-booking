@@ -1,2 +1,8 @@
-<app-nav-bar *ngFor ="let page of pages" [page] = "page.page" [name] = "page.name"></app-nav-bar>
-<router-outlet></router-outlet>
+<header>
+    <nav>
+        <app-nav-bar *ngFor ="let page of pages" [page] = "page.page" [name] = "page.name" ></app-nav-bar>
+    </nav>
+</header>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

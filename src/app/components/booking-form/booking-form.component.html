@@ -1,13 +1,13 @@
 <form>
-  <label for="">Provide name</label><br>
-  <input type="text" placeholder="John..."><br>
-  <label for="">Provide id number</label><br>
-  <input type="text" placeholder="Smith..."><br>
-  <select name="" id="">
-    <option value="">Choose City</option>
-    <option value="">DBN - Durban City</option>
-    <option value="">PE - Port Elizabeth</option>
-    <option value="">CPT - Cape Town</option>
+  <label for=""><h4>Provide name</h4></label><br>
+  <input type="text" placeholder="John..." name ="clientName" [(ngModel)] = "clientName"><br>
+  <label for=""><h4>Provide id number</h4></label><br>
+  <input type="text" placeholder="Smith..." name ="clientId" [(ngModel)] = "clientId"><br>
+  <label for=""><h4>Choose City</h4></label>
+  <select name="cities" id="select" [(ngModel)] = "city" [ngModelOptions]="{standalone: true}" aria-dropeffect="popup">
+    <option value = "Cape Town" >Cape Town</option>
+    <option value = "Durban" >Durban</option>
+    <option value = "Port Elizabeth" >Port Elizabeth</option>
   </select>
   
   <table>
@@ -17,12 +17,12 @@
       </td>
     </tr>
     <tr>
-      <td><label>economy</label></td>
-      <td><input type="radio" name="class" id=""></td>
+      <td><label for="economy">economy</label></td>
+      <td><input type="radio" id = "economy" name="class" value="economy"  [(ngModel)] = "flightClass"></td>
     </tr>
     <tr>  
-      <td><label>business</label></td>
-      <td><input type="radio" name="class" id=""></td>
+      <td><label for= "business">business</label></td>
+      <td><input type="radio" id = "business" name="class" value="business"  [(ngModel)] = "flightClass"></td>
     </tr>
   </table>
   <table>
@@ -36,12 +36,12 @@
     </tr>
     <tr>
         <td>
-          <input type="date" name="depart" id="">
+          <input type="date" name="depart" id="" [(ngModel)] = "depart">
         </td>
         <td>
-            <input type="date" name="return" id="">
+            <input type="date" name="return" id="return">
         </td>
       </tr>
   </table>
-  <input type="button" value="submit booking">
+  <input type="button" value="submit booking" (click) = "processData()">
 </form>

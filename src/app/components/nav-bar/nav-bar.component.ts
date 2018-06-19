@@ -13,37 +13,35 @@ export class NavBarComponent implements OnInit {
   @Input() page;
 
   /*global variables */
-  /*@Input() clientName;
+  @Input() clientName;
   @Input() clientId;
   @Input() city;
   @Input() flightClass;
   @Input() departDate;
-  @Input() returnDate;*/
+  @Input() returnDate;
 
   constructor(private router: Router) { }
 
   pages = [
-    {name:'booking', page: 'booking'},
-    {name:'details', page: 'details'}
+    {name:'home', page: ''},
+    {name:'about', page: 'about'},
+    {name:'contacts', page: 'contacts'}
   ];
   ngOnInit() {
   }
 
   navigateTo(){
-    /*switch(this.name){
-      case '':
-        this.router.navigate(['']);
+    switch(this.name){
+      case 'about':
+        this.router.navigate(['/details/about']);
       break;
-      case '':
-        this.router.navigate([''], {
-          queryParams:{
-            clientName : this.clientName,
-            clientId: this.clientId
-          }
-        });
+      case 'contacts':
+      this.router.navigate(['/details/contacts']);
+      break;
+      case 'home':
+      this.router.navigate(['/']);
       break;
     }
-    */
   }
 
 }

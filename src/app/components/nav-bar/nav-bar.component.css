@@ -1,0 +1,14 @@
+h2{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .22s ease;
+    user-select: none;
+}
+
+h2:hover{
+    background: rgba(222,222,222,0.6);
+}

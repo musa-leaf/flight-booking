@@ -1,27 +1,33 @@
 #hero{
+    width: 100%;
     padding-top: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content:center;
     align-items: center;
+    justify-content: center;
 }
-#hero h1{
-    font-size: 3em;
+#h1{
+    font-size:5em;
+    letter-spacing: 100px;
     text-align: center;
+    font-weight: lighter;
+    padding-left: 100px;
+    transform-origin: center;
 }
-#hero h3{
-    margin-top: 30px;
-    max-width: 680px;
+#h3{
+    font-size:1.5em;
+    letter-spacing: 15px;
+    padding-left: 15px;
     text-align: center;
-    
+    transform-origin: center; 
 }
 
 #hero input {
     background: transparent;
     padding: 20px 60px;
     margin-top: 80px;
-    border: 2px solid;
+    border: 2px solid #262626;
     font-size: 1.5em;
     cursor: pointer;
-
+    color: #262626;
 }

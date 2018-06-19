@@ -9,10 +9,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class DetailsBarComponent implements OnInit {
 
   pages = [
-    {name: 'events', page: 'events'},
-    {name: 'views', page: 'views'},
+    {name:'home', page: ''},
+    {name:'about', page: 'about'},
+    {name:'contacts', page: 'contacts'}
   ];
-
   constructor(private route: ActivatedRoute, private router: Router) { }
 
  
