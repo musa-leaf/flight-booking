@@ -1,0 +1,15 @@
+<header>
+  <nav>
+      <a routerLink ="/">home</a>
+      <a routerLink ="/home/contacts">contacts</a>
+      <a routerLink ="/home/about">about</a>
+  </nav>
+</header>
+<div class="container">
+  <div id="side">
+      <app-nav-bar *ngFor ="let page of pages" [page] = "page.page" [name] = "page.name" [clientName] = "clientName"></app-nav-bar>
+  </div>
+  <div id="main">
+      <router-outlet></router-outlet>
+  </div>
+</div>

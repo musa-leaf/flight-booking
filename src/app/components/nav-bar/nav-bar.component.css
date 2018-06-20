@@ -1,14 +1,15 @@
 h2{
-    display: inline-block;
+    display: block;
     height: 50px;
     line-height: 50px;
     width: 120px;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     transition: all .22s ease;
     user-select: none;
+    padding: 0 10px;;
 }
 
 h2:hover{
-    background: rgba(222,222,222,0.6);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.3);
 }

@@ -12,22 +12,22 @@ export class BookingFormComponent implements OnInit {
   clientId : string = "";
   city : string = "";
   flightClass : string = "";
-  depart : string = "";
-  return : string = "";
+  departDate : string = "";
+  returnDate : string = "";
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
   processData(){
-    this.router.navigate(['details'], {
-      queryParams : {
-        clientName: this.clientName,
-        clientId : this.clientId,
-        city: this.city,
-        flightClassclass: this.flightClass,
-        depart:this.depart,
-        return:this.return
+    this.router.navigate(['home'], {
+      queryParams:{
+        'clientName': this.clientName,
+        'clientId': this.clientId,
+        'city': this.city,
+        'flightClass': this.flightClass,
+        'departDate': this.departDate,
+        'returnDate': this.returnDate,
       }
     });
   }

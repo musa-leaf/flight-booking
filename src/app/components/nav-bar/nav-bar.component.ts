@@ -23,20 +23,15 @@ export class NavBarComponent implements OnInit {
   constructor(private router: Router) { }
 
   pages = [
-    {name:'home', page: ''},
-    {name:'about', page: 'about'},
-    {name:'contacts', page: 'contacts'}
+    {name:'view', page: 'view'}
   ];
   ngOnInit() {
   }
 
   navigateTo(){
     switch(this.name){
-      case 'about':
-        this.router.navigate(['/details/about']);
-      break;
-      case 'contacts':
-      this.router.navigate(['/details/contacts']);
+      case 'view':
+        this.router.navigate(['/home/view']);
       break;
       case 'home':
       this.router.navigate(['/']);

@@ -8,8 +8,9 @@ import { BookingFormComponent } from './components/booking-form/booking-form.com
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ContactsBarComponent } from './components/contacts-bar/contacts-bar.component';
 import { AboutBarComponent } from './components/about-bar/about-bar.component';
-import { DetailsBarComponent } from './components/details-bar/details-bar.component';
 import { AppRoutes } from './app.routes';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { ViewComponent } from './components/view/view.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AppRoutes } from './app.routes';
     NavBarComponent,
     ContactsBarComponent,
     AboutBarComponent,
-    DetailsBarComponent
+    HomePageComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,

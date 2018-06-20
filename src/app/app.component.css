@@ -3,6 +3,7 @@ body{
     background:  url(/../../assets/imgs/bg.jpg) no-repeat;
     background-size: cover;
     background-position: top center;
+    background-attachment: fixed;
 }
 
 #wrap{
