@@ -15,11 +15,14 @@ export class BookingFormComponent implements OnInit {
   departDate : string = "";
   returnDate : string = "";
 
+ 
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
   processData(){
+
     this.router.navigate(['home'], {
       queryParams:{
         'clientName': this.clientName,

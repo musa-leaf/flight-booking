@@ -19,11 +19,11 @@
     </tr>
     <tr>
       <td><label for="economy">economy</label></td>
-      <td><input type="radio" id = "economy" name="class" value="economy"  [(ngModel)] = "flightClass"></td>
+      <td><input type="radio" id = "economy" name="class" value="Economy"  [(ngModel)] = "flightClass"></td>
     </tr>
     <tr>  
       <td><label for= "business">business</label></td>
-      <td><input type="radio" id = "business" name="class" value="business"  [(ngModel)] = "flightClass"></td>
+      <td><input type="radio" id = "business" name="class" value="Business"  [(ngModel)] = "flightClass"></td>
     </tr>
   </table>
   <table>
@@ -37,10 +37,10 @@
     </tr>
     <tr>
         <td>
-          <input type="date" name="depart" id="" [(ngModel)] = "depart">
+          <input type="date" name="depart" id="" [(ngModel)] = "departDate">
         </td>
         <td>
-            <input type="date" name="return" id="return">
+            <input type="date" name="return" id="returnDate" [(ngModel)] = "returnDate">
         </td>
       </tr>
   </table>

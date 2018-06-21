@@ -8,7 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HomePageComponent implements OnInit {
 
   pages = [
-    {name:'view', page: 'view'}
+    {name:'view', page: 'view'},
+    
   ];
 
   clientName : string;

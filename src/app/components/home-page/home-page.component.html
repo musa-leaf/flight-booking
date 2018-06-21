@@ -7,7 +7,7 @@
 </header>
 <div class="container">
   <div id="side">
-      <app-nav-bar *ngFor ="let page of pages" [page] = "page.page" [name] = "page.name" [clientName] = "clientName"></app-nav-bar>
+      <app-nav-bar *ngFor ="let page of pages" [page] = "page.page" [name] = "page.name" [clientName] = "clientName" [clientId] = "clientId" [city] = "city" [flightClass] = "flightClass" [returnDate] = "returnDate" [departDate] = "departDate"></app-nav-bar>
   </div>
   <div id="main">
       <router-outlet></router-outlet>

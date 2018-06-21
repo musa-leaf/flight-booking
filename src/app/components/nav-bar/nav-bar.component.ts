@@ -25,13 +25,26 @@ export class NavBarComponent implements OnInit {
   pages = [
     {name:'view', page: 'view'}
   ];
+  
   ngOnInit() {
   }
 
   navigateTo(){
+    console.log(this.returnDate);
     switch(this.name){
       case 'view':
-        this.router.navigate(['/home/view']);
+        this.router.navigate(['/home/view'],
+          {
+            queryParams:{
+              'clientName': this.clientName,
+              'clientId': this.clientId,
+              'city': this.city,
+              'flightClass': this.flightClass,
+              'departDate': this.departDate,
+              'returnDate': this.returnDate
+            }
+          }
+      );
       break;
       case 'home':
       this.router.navigate(['/']);
