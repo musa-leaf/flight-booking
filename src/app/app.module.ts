@@ -11,6 +11,7 @@ import { AboutBarComponent } from './components/about-bar/about-bar.component';
 import { AppRoutes } from './app.routes';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { ViewComponent } from './components/view/view.component';
+import { PlaceholderComponent } from './components/placeholder/placeholder.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ViewComponent } from './components/view/view.component';
     ContactsBarComponent,
     AboutBarComponent,
     HomePageComponent,
-    ViewComponent
+    ViewComponent,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,

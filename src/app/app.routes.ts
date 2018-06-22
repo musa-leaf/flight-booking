@@ -4,6 +4,7 @@ import { ContactsBarComponent } from "./components/contacts-bar/contacts-bar.com
 import { AboutBarComponent } from "./components/about-bar/about-bar.component";
 import { HomePageComponent } from "./components/home-page/home-page.component";
 import { ViewComponent } from "./components/view/view.component";
+import { PlaceholderComponent } from "./components/placeholder/placeholder.component";
 
 export const AppRoutes = [
     {path:'', component:LandingPageComponent},
@@ -12,6 +13,6 @@ export const AppRoutes = [
         {path:'view', component:ViewComponent},
         {path:'contacts', component:ContactsBarComponent},
         {path:'about', component:AboutBarComponent},
-        {path:'', component:AboutBarComponent}
+        {path:'', component:PlaceholderComponent}
     ]}
 ];
