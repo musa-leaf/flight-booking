@@ -11,6 +11,7 @@ export const AppRoutes = [
     {path:'home', component:HomePageComponent, children:[
         {path:'view', component:ViewComponent},
         {path:'contacts', component:ContactsBarComponent},
-        {path:'about', component:AboutBarComponent}
+        {path:'about', component:AboutBarComponent},
+        {path:'', component:AboutBarComponent}
     ]}
 ];

@@ -29,3 +29,12 @@ a:link, a:visited{
  a:hover{
     filter: grayscale(0);
 }
+
+iframe{
+    filter: grayscale(1);
+    transition: all .12s ease;
+}
+
+iframe:hover{
+    filter: grayscale(0);
+}
